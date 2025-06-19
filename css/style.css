@@ -127,6 +127,10 @@ nav{
     text-align: center;
 }
 
+img{
+    color: transparent;
+    background-color: transparent;
+}
 
 @media (max-width: 768px) {
     
