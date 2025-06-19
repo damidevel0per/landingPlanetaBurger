@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #e8e8e8;*/
+    background-color: #f9b933;
+    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /*background-color: #000;*/
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #700b04;
+    color: white;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.logo h2{
+    padding: 10px;
+}
+
+.img-logo{
+    height: 50px;
+}
+
+nav{
+    background-color: #f9b933;
+}
+
+header nav{
+    color: black;
+    padding-right: 10px;
+}
+header a{
+    padding: 15px;
+    text-decoration: none;
+    color: #e7b581;
+    background-color: #700b04;
+}
+
+.hero{
+    background-color: transparent;
+    color: white;
+    padding: 40px;
+    margin: 50px 90px;  
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*box-shadow: rgba(0, 0, 0, 0.35) 
+    0px 5px 15px;*/
+}
+.hero img{
+    width: 600px;
+}
+
+.hero h1{
+    font-size: xx-large;
+    color: #700b04;
+}
+
+.hero p{
+
+    color: #700b04;
+    margin-top: 20px;
+}
+
+nav{
+    background-color: #700b04;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: end;
+}
+
+.sobre-nosotros{
+    background-color: #d6aea7;
+    color: #700b04;
+    padding: 50px;
+    margin: 50px 100px;  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 
+    0px 5px 15px;
+}
+
+.sobre-nosotros h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sobre-nosotros hr{
+    border-color: #700b04;
+    color: #700b04;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.sobre-nosotros p{
+    margin-top: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sobre-nosotros img{
+    width: 520px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
