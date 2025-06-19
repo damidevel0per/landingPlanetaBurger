@@ -18,7 +18,7 @@ header{
     color: white;
     padding: 10px;
     opacity: 0;
-    animation: aparecer 2s ease-out forwards;
+    animation: aparecer 1s ease-out forwards;
 }
 
 .logo{
@@ -66,8 +66,10 @@ header a{
 
 .hero img{
     width: 600px;
-    opacity: 0;
-    animation: aparecer 2s ease-out forwards;
+    /*animation: aparecer 2s ease-out forwards;*/
+
+    animation: aparecer 1s ease-out forwards;
+    animation: latido 3s forwards;
 }
 
 .hero h1{
@@ -85,6 +87,16 @@ header a{
         transform: translateX(0);
     }
 }
+
+@keyframes latido {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+}
+  
 
 .hero p{
 
