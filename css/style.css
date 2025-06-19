@@ -17,6 +17,8 @@ header{
     background-color: #700b04;
     color: white;
     padding: 10px;
+    opacity: 0;
+    animation: aparecer 2s ease-out forwards;
 }
 
 .logo{
@@ -24,6 +26,7 @@ header{
     align-items: center;
     padding-left: 5px;
 }
+
 .logo h2{
     padding: 10px;
 }
@@ -60,19 +63,36 @@ header a{
     /*box-shadow: rgba(0, 0, 0, 0.35) 
     0px 5px 15px;*/
 }
+
 .hero img{
     width: 600px;
+    opacity: 0;
+    animation: aparecer 2s ease-out forwards;
 }
 
 .hero h1{
     font-size: xx-large;
     color: #700b04;
+    animation: inputs 3s steps(22);
+    opacity: 0;
+    transform: translateX(-500px);
+    animation: aparecer 2s ease-out forwards;
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .hero p{
 
     color: #700b04;
     margin-top: 20px;
+    opacity: 0;
+    transform: translateX(500px);
+    animation: aparecer 2s ease-out forwards;
 }
 
 nav{
@@ -130,6 +150,19 @@ nav{
 img{
     color: transparent;
     background-color: transparent;
+}
+
+footer{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #700b04;
+    color: white;
+}
+
+footer h2{
+    padding: 90px;
 }
 
 @media (max-width: 768px) {
