@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #e8e8e8;*/
+    background-color: #f9b933;
+    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /*background-color: #000;*/
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #700b04;
+    color: white;
+    padding: 10px;
+    opacity: 1;
+    animation: aparecer 1s ease-out forwards;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.logo h2{
+    padding: 10px;
+}
+
+.img-logo{
+    height: 50px;
+}
+
+nav{
+    background-color: #f9b933;
+}
+header nav{
+    color: black;
+    padding-right: 10px;
+}
+header a{
+    padding: 15px;
+    text-decoration: none;
+    color: #e7b581;
+    background-color: #700b04;
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav{
+    background-color: #700b04;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: end;
+}
+
+footer{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #700b04;
+    color: white;
+}
+
+footer h2{
+    padding: 90px;
+}
+
+/*empieza css de formulario*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ocupa toda la altura de la pantalla */
+    padding: 20px;
+}
+
+form {
+    opacity: 0;
+    margin: 0 auto;
+    background-color: #700b04;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    animation: aparecer 1s ease-out forwards;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 
+    0px 5px 15px;
+}
+form h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lb{
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color : #e7b581;
+}
+
+.info{
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    margin: 10px;
+    font-size: 14px;
+    padding-left: 5px;
+    background-color: #f9b933;
+    color: #700b04;
+    font-weight: bold;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #e7b581;
+    color: #700b04;
+}
+
+/*termina*/
+
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .logo {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+      
+    .hero{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+     }
+
+    .hero img {
+    width: 250%;
+    }
+
+    .sobre-nosotros {
+    margin: 20px;
+    padding: 20px;
+    }
+
+    .sobre-nosotros img {
+    width: 100%;
+    }
+
+    nav {
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    }
+
+    .nav-bar a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    }
+
+}
+
+

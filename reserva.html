@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar mesa</title>
+    <link rel="stylesheet" href="css/styleReservarMesa.css">
+</head>
+<body>
+    <header>
+        <div class="logo">  
+            <img class="img-logo" src="img/logo.webp" alt="">
+            <h2>PlanetaBurger</h2>      
+        </div>
+        <nav>
+            <a href="index.html"><strong>Inicio</strong></a>
+            <a href="#"><strong>Nosotros</strong></a>
+            <a href="#"><strong>Galeria</strong></a>
+            <a href="reserva.html"><strong>Reserva</strong></a>
+        </nav>
+
+    </header>
+
+    <section>
+        <div class="form-container">
+            <form class="form-reservar-mesa">
+
+                <h1>Reserva tu mesa</h1>
+    
+                <label class="lb">Nombre</label>
+                <input name="nome" id="nome" type="text" class="info">
+    
+                <label class="lb">Apellido</label>
+                <input type="text" class="info">
+    
+                <label class="lb">E-mail</label>
+                <input class="info">
+            
+                <label class="lb">Fecha de reserva</label>
+                <input type="date" class="info">
+    
+                <label class="lb" >Numero de invitados</label>
+                <input type="number" class="info">
+                
+                <button id="enviar" type="submit">Reservar</button>
+                <button id="limpar" type="reset">Cancelar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
