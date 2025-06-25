@@ -94,8 +94,15 @@ h1{
     justify-content: center;
     gap: 50px;
     color: #e7b581;
-    transition: transform 3s ease;
+
 }
+
+.cards-carta .card:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.15) 
+    0px 5px 15px;
+}
+
 
 .cards-carta .card{
 
@@ -105,14 +112,10 @@ h1{
     max-width: 400px;
     padding: 20px;
     box-sizing: border-box;
-}
+    transition: transform 1.5s ease;
 
-.cards-carta .card:hover{
-    transform: scale(1.03);
-    box-shadow: rgba(0, 0, 0, 0.25) 
-    0px 5px 15px;
-}
 
+}
 
 .cards-carta .card h4{
     font-size: x-large;
