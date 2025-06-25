@@ -67,7 +67,6 @@ header a{
 .hero img{
     width: 600px;
     /*animation: aparecer 2s ease-out forwards;*/
-
     animation: aparecer 1s ease-out forwards;
     animation: latido 3s forwards;
 }
@@ -120,12 +119,12 @@ nav{
 }
 
 .sobre-nosotros{
-    background-color: #d6aea7;
+    background-color: transparent;
     color: #700b04;
     padding: 50px;
     margin: 50px 100px;  
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 
+    box-shadow: rgba(0, 0, 0, 0.05) 
     0px 5px 15px;
 }
 
@@ -146,22 +145,25 @@ nav{
     text-align: center;
     margin-bottom: 20px;
 }
-.sobre-nosotros img{
-    width: 520px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
 
 .container{
-    margin-top: 30px;
     display: flex;
-    flex-flow: row wrap;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;   
+    background-color: transparent;
 }
 
-img{
-    color: transparent;
-    background-color: transparent;
+.container img{
+    max-width: 750px;
+    border-radius: 8px;
+    transition: transform 1s ease;
+}
+
+.container img:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.25) 
+    0px 5px 15px;
 }
 
 .footer-contenido {
@@ -250,7 +252,7 @@ img{
     .footer-contenido {
         flex-direction: column;
         align-items: center;
-      }
+    }
 }
 
 
